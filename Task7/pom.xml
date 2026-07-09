@@ -3,19 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ru.itis.inf503</groupId>
+        <artifactId>java-practice-2026</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>ru.itis.inf503</groupId>
-    <artifactId>java-practice-2026</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>Task7</module>
-    </modules>
+    <artifactId>shop-app</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <!--  Source: https://mvnrepository.com/artifact/org.postgresql/postgresql  -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.13</version>
+        </dependency>
+    </dependencies>
 
 </project>
